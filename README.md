@@ -21,3 +21,12 @@ Add the code below to the module level build.gradle
 ### Navigation Graph 
 This is so you you get to use fragments instead of activities which are used for much more heavier work 
 Navigation graphs also indicate how your app moves through the screens
+
+
+### Navigate from Activity to Activity 
+This code will prevent the backbutton pressed function to close the app
+```
+  Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+  startActivity(i);
+  finish();
+```
